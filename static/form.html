@@ -1,0 +1,49 @@
+<head>
+<script type="text/javascript" async="" src="form.js"></script>
+</head>
+<h1>Create Icon Form</h1>
+<br />
+<form name="createIcon" action="http://ucon-server.appspot.com/icon/" method="post">
+    <fieldset>
+    keyName: <input type="text" name="keyName"  />  <br />
+    type: <input type="text" name="type" /> <br />
+    </fieldset>
+    thumb: <input type="text" name="thumb" ><br />
+    tag: <input type="text" name="tag" ><br />
+    tag: <input type="text" name="tag" ><br />
+    tag: <input type="text" name="tag" ><br />
+    Content: <br />
+    <div><textarea name="content" rows="5" cols="50"></textarea></div>
+    <input type="submit" value="Create" />
+</form> 
+<h1>Send Action Form</h1>
+<br />
+<form name="sendAction" action="http://ucon-server.appspot.com/action/" method="post">
+    <fieldset>
+    place: <input type="text" name="place"  />  <br />
+    type: <input type="text" name="type" size="20"  /> <br />
+    </fieldset>
+    tag: <input type="text" name="tag" ><br />
+    tag: <input type="text" name="tag" ><br />
+    Content: <br />
+    <div><textarea name="content" rows="5" cols="50"></textarea></div>
+    <input type="submit" value="Create" />
+</form>
+
+<h1>Modify Icon Form</h1>
+<br />
+
+<form name="modifyIcon" action="http://ucon-server.appspot.com/icon/modify" method="post">
+	<fieldset>
+    id: <input type="text" name="id"  />  <button type="button" onclick="getIcon(this.parentNode.querySelector('input[name=id]').value,this.parentNode.querySelector('input[name=keyName]').value)" >Get Data</button>  <br />
+	keyName: <input type="text" name="keyName"  />  <br />
+    type: <input type="text" name="type" /> <br />
+    </fieldset>
+    thumb: <input type="text" name="thumb" ><br />
+    tag: <input type="text" name="tag" ><br />
+    tag: <input type="text" name="tag" ><br />
+    tag: <input type="text" name="tag" ><br />
+    Content: <br />
+    <div><textarea name="content" rows="5" cols="50"></textarea></div>
+    <input type="submit" value="Create" />
+</form>  	

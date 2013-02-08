@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Config">
+      <FileRef
+         location = "container:app.yaml">
+      </FileRef>
+      <FileRef
+         location = "container:cron.yaml">
+      </FileRef>
+      <FileRef
+         location = "container:queue.yaml">
+      </FileRef>
+      <FileRef
+         location = "group:index.yaml">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "container:auth.py">
+   </FileRef>
+   <FileRef
+      location = "container:database.py">
+   </FileRef>
+   <FileRef
+      location = "container:icon.py">
+   </FileRef>
+   <FileRef
+      location = "group:action.py">
+   </FileRef>
+   <FileRef
+      location = "group:index.py">
+   </FileRef>
+   <FileRef
+      location = "group:tool.py">
+   </FileRef>
+   <FileRef
+      location = "group:upload_file.py">
+   </FileRef>
+   <Group
+      location = "group:static"
+      name = "static">
+      <FileRef
+         location = "group:form.html">
+      </FileRef>
+      <FileRef
+         location = "group:form.js">
+      </FileRef>
+   </Group>
+</Workspace>

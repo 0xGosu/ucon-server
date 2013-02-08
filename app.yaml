@@ -1,0 +1,28 @@
+application: ucon-server
+version: 1c-jsonp
+runtime: python27
+threadsafe: true
+api_version: 1
+
+handlers:
+- url: /[^/]*
+  script: index.app
+  
+- url: /auth/.*
+  script: auth.app
+  
+- url: /action/.*
+  script: action.app
+
+- url: /icon/.*
+  script: icon.app
+
+- url: /file/.*
+  script: upload_file.app
+  
+- url: /static/
+  static_dir: static
+  
+builtins:
+- admin_redirect: on
+- remote_api: on
